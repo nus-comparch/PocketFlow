@@ -33,8 +33,8 @@ tf.app.flags.DEFINE_string('uqtf_save_path', './models_uqtf/model.ckpt',
                            'UQ-TF: model\'s save path')
 tf.app.flags.DEFINE_string('uqtf_save_path_eval', './models_uqtf_eval/model.ckpt',
                            'UQ-TF: model\'s save path for evaluation')
-tf.app.flags.DEFINE_integer('uqtf_weight_bits', 8, 'UQ-TF: # of bits for weight quantization')
-tf.app.flags.DEFINE_integer('uqtf_activation_bits', 8,
+tf.app.flags.DEFINE_integer('uqtf_weight_bits', 3, 'UQ-TF: # of bits for weight quantization')
+tf.app.flags.DEFINE_integer('uqtf_activation_bits', 3,
                             'UQ-TF: # of bits for activation quantization')
 tf.app.flags.DEFINE_integer('uqtf_quant_delay', 0,
                             'UQ-TF: # of steps after which weights and activations are quantized')

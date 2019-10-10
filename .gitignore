@@ -5,6 +5,7 @@ logs
 models
 models_*
 automl_output_*
+data/
 .pylint_results
 start_multi.sh
 ratio.list

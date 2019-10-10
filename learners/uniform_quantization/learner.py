@@ -58,6 +58,9 @@ def setup_bnds_decay_rates(model_name, dataset_name):
     if model_name.startswith('resnet'):
       bnds = [nb_batches_per_epoch * 15, nb_batches_per_epoch * 40]
       decay_rates = [1e-3, 1e-4, 1e-5]
+    elif model_name.startswith('lenet'):
+      bnds = [nb_batches_per_epoch * 5, nb_batches_per_epoch * 30]
+      decay_rates = [1e-4, 1e-5, 1e-6]
   elif dataset_name == 'ilsvrc_12':
     if model_name.startswith('resnet'):
       bnds = [nb_batches_per_epoch * 5, nb_batches_per_epoch * 20]
